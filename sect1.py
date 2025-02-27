@@ -1,3 +1,5 @@
+## Multi-Armed Bandit Problemi
+
 import numpy as np
 import matplotlib.pyplot as plt
 
