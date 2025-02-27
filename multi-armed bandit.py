@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# 1000 örnek üretmek için dağılımları tanımlayalım
-np.random.seed(42)  # Rastgelelik için sabit bir seed değeri
+# 1000 deneme ve 5 seçenek
+np.random.seed(80)  # Rastgelelik için sabit bir seed değeri
 
 # Normal Dağılım
 normal_data = np.random.normal(loc=0, scale=1, size=1000)
@@ -29,7 +29,7 @@ pareto_data = np.random.pareto(a=2, size=1000)
 plt.hist(pareto_data, bins=30, alpha=0.7, label="Pareto Dağılımı")
 print("Pareto Dağılım - Ortalama:", np.mean(pareto_data), "Varyans:", np.var(pareto_data))
 
-# Histogramları gösterelim
+# Histogramlar
 plt.title("Olasılık Dağılımlarının Karşılaştırılması")
 plt.xlabel("Değerler")
 plt.ylabel("Frekans")
