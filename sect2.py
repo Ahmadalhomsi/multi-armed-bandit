@@ -6,7 +6,7 @@ fair_dice_rolls = np.random.randint(1, 7, size=1000)
 values, counts = np.unique(fair_dice_rolls, return_counts=True)
 
 plt.bar(values, counts, alpha=0.7, label="Eşit Olasılıklı Zar")
-plt.title("Eşit Olasılıklı Zar Atımı Sonuçları")
+plt.title("Eşit Olasılıklı Zar Atımı")
 plt.xlabel("Zar Yüzleri")
 plt.ylabel("Frekans")
 plt.legend()
@@ -18,9 +18,9 @@ normal_dice_rolls = np.clip(normal_dice_rolls, 1, 6)  # Değerleri 1-6 arasında
 values_normal, counts_normal = np.unique(normal_dice_rolls, return_counts=True)
 
 plt.bar(values_normal, counts_normal, alpha=0.7, label="Normal Dağılımlı Zar")
-plt.title("Normal Dağılımlı Zar Atımı Sonuçları")
+plt.title("Normal Dağılımlı Zar Atımı")
 plt.xlabel("Zar Yüzleri")
-plt.ylabel("Frekans")
+plt.ylabel("Frequency")
 plt.legend()
 plt.show()
 
@@ -30,8 +30,8 @@ poisson_dice_rolls = np.clip(poisson_dice_rolls, 1, 6)  # Değerleri 1-6 arasın
 values_poisson, counts_poisson = np.unique(poisson_dice_rolls, return_counts=True)
 
 plt.bar(values_poisson, counts_poisson, alpha=0.7, label="Poisson Dağılımlı Zar")
-plt.title("Poisson Dağılımlı Zar Atımı Sonuçları")
+plt.title("Poisson Dağılımlı Zar Atımı")
 plt.xlabel("Zar Yüzleri")
-plt.ylabel("Frekans")
+plt.ylabel("Frequency")
 plt.legend()
 plt.show()

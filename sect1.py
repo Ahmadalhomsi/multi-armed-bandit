@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # 1000 deneme ve 5 seçenek
-np.random.seed(80)  # Rastgelelik için sabit bir seed değeri
+np.random.seed(95)  # Rastgelelik için
 
 # Normal Dağılım
 normal_data = np.random.normal(loc=0, scale=1, size=1000)
@@ -34,6 +34,6 @@ print("Pareto Dağılım - Ortalama:", np.mean(pareto_data), "Varyans:", np.var(
 # Histogramlar
 plt.title("Olasılık Dağılımlarının Karşılaştırılması")
 plt.xlabel("Değerler")
-plt.ylabel("Frekans")
+plt.ylabel("Frequency")
 plt.legend()
 plt.show()
