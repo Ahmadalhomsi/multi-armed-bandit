@@ -8,7 +8,7 @@ values, counts = np.unique(fair_dice_rolls, return_counts=True)
 plt.bar(values, counts, alpha=0.7, label="Eşit Olasılıklı Zar")
 plt.title("Eşit Olasılıklı Zar Atımı")
 plt.xlabel("Zar Yüzleri")
-plt.ylabel("Frekans")
+plt.ylabel("Frequency")
 plt.legend()
 plt.show()
 
